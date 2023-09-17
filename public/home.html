@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>15-2 Zin Forms: Node w/ JSON DB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="align-center">
+
+  <h1 class="mg-5">Simple JS Static Scripts Calculator</h1>
+  
+  <div class="mg-5"> 
+    <h3>Add</h3>
+    
+    <form id="add-form" autocomplete="off">
+      <input type="text" id="firstNumber" placeholder="First number">
+      <input type="text" id="secondNumber" placeholder="Second number">
+      <button type="submit">Calculate</button>
+    </form>
+    
+    <div id="result"></div>
+  </div>
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- ------------------------------------------------------------- -->
+
+  <div class="mg-5"> 
+    <h3>Multiply</h3>
+    
+    <form id="multiply-form" autocomplete="off">
+      <!-- the probldm is the labels -->
+      <input type="text" id="m-firstNumber" placeholder="First number">
+      <input type="text" id="m-secondNumber" placeholder="Second number">
+      <button type="submit">Calculate</button>
+    </form>
+    
+    <div id="multiply-result"></div>
+
+  </div>
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- ------------------------------------------------------------- -->
+
+  <div class="mg-5"> 
+  <h3>Generate Product ID</h3>
+
+  <form id="product-id-form" autocomplete="off">
+    <label for="product-type">Select a Product Type:</label>
+    <select id="product-type" name="product-type">
+      <option value="powertrain">Powertrain</option>
+      <option value="fueling">Fueling</option>
+      <option value="electrical">Electrical</option>
+      <option value="etc">Etc</option>
+    </select>
+    <input type="text" id="product-identifier" placeholder="Custom Identifier">
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="product-id-result"></div>
+
+  </div>
+
+
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
